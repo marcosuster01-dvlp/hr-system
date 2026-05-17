@@ -6,11 +6,11 @@ def calculate_bonus(salary, performance_score):
     elif performance_score == 3:
         bonus = salary * 0.10
     else:
-        bonus = salary
+        bonus = 0
     return bonus
 
 def format_employee_id(name, department, hire_year):
-    id = f"{name.upper()} - {department.upper()} - {hire_year.upper()}"
+    id = f"{department.upper()} - {hire_year} - {name.upper()}"
     return id
 
 def is_elegible_for_vacation(days_worked, contract_type):
